@@ -7,7 +7,7 @@ const modalClose = document.querySelector(".modal-close");
 
 fetch(urlAPI)
   .then(res => res.json())
-  .then(res => res.results())
+  .then(res => res.results)
   .then((data) => displayEmployees(data))
   .catch(err => console.log(err))
 
@@ -25,7 +25,7 @@ fetch(urlAPI)
       employees.forEach((employee, index) => {
         let name = employee.name;
         let email = employee.email;
-        let email = employee.location.city;
+        let city = employee.location.city;
         let picture = employee.picture;
 
         //template literals make this so much cleaner!
