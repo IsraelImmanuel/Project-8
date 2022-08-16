@@ -2,9 +2,7 @@
   box-sizing:border-box;
   font-family: Nunito;
 }
-body {
-  position: relative;
-}
+
 
 .overlay {
   position: absolute;
@@ -12,7 +10,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(100, 100, 100, 0.4)
+  background-color: rgba(100, 100, 100, 0.4);
+  height: 150vh;
 }
 
 .modal {
