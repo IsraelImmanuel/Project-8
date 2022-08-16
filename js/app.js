@@ -62,8 +62,8 @@ fetch(urlAPI)
       <p class="address">${city}</p>
       <hr />
       <p>${phone}</p>
-      <p class="address">${street}, ${state}, ${postcode}</p>
-      <p>Birthday: ${date.getMonth()+1}/${date.getDate()}/${date.getFullYear()}</p>
+      <p class="address">${street.number}, ${street.name}, ${state} ${postcode}</p>
+      <p>Birthday: ${((date.getMonth()) < 10 ? '0' : '')+(date.getMonth()+1)}/${date.getDate()}/${date.getFullYear()}</p>
       </div>
       `;
 
@@ -89,4 +89,4 @@ fetch(urlAPI)
 
     modalClose.addEventListener('click', () => {
       overlay.classList.add("hidden");
-    });
+    }); ``
